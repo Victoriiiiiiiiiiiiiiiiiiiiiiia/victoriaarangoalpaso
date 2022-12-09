@@ -1,0 +1,525 @@
+/*reset*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+a{
+    tab-size: 24px;
+    text-decoration: none;
+    color: rgb(123, 10, 10);
+}
+
+ul{
+    list-style: none;
+}
+
+/*fin reset*/
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 130px;
+}
+
+body{
+    background-image: url(Fondo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*barra de navegacion*/
+
+nav{
+    z-index: 1000;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+
+    width: 100%;
+}
+
+.contenedor{
+    margin-top: 120px;
+    width: 1300px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.menu li{
+        margin: 20px 0 20px 60px;
+}
+
+.menu li a{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: rgb(113, 113, 113);
+    font-size: 18px;
+    transition: all 300ms ease;
+}
+
+.menu li a:hover{
+    color: rgb(228, 179, 187);
+}
+
+/*fin barra de navegacion*/
+
+/*figure*/
+
+#galeria{
+    background-color: rgb(255, 253, 253);
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    color: rgb(250, 240, 225);
+    --carousel-button-svg-stroke-width: 20;
+  }
+  
+  .carousel__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+/*fin figure*/
+
+/*encabezado*/
+
+header{
+    background-color: hsl(0, 0%, 150%);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: auto;
+}
+
+.centrar{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.centrar img{
+    margin: 30px;
+}
+
+.centrar .titulo{
+    color: rgb(250, 240, 225);
+}
+
+.encabezado .centrar h1{
+    color: rgb(250, 240, 225);
+}
+
+.centrar .boton{
+    color: rgb(250, 240, 225);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    border: 1px solid;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50px;
+    width: 170px;
+    height: 40px;
+    margin-top: 40px;
+    transition: all 200ms ease;
+}
+
+.boton{
+    color: black;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    border: 1px solid;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50px;
+    width: 170px;
+    height: 40px;
+    margin-top: 40px;
+    transition: all 200ms ease;
+}
+
+.boton:hover{
+    color: aliceblue;
+    background-color: rgb(69, 55, 51);
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 500px;
+}
+
+.encabezado div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    margin: auto;
+}
+
+.centrar h1{
+    text-align: center;
+    width: 700px;
+    color: rgb(83, 59, 51) ;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.encabezado img{
+    margin-top: 20px;
+}
+
+.titulo{
+    color: rgb(83, 59, 51);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+/*fin encabezado*/
+
+/*secciones*/
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.titulo{
+    text-align: center;
+    color:  rgb(83, 59, 51);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.seccion{
+    display: flex;
+    margin: 0 auto;
+}
+
+/*conocenos*/
+
+#nosotros{
+    background-image: url(img/nosotros.jpg);
+    width: 100%;
+    margin-top: 0;
+}
+
+.fondo{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .conocenos{
+    width: 30%;
+    margin-top: 0%;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.contenedor .fondo h2{
+    color: rgb(90, 59, 12)
+    
+}
+
+.contenedor .conocenos p,strong{
+    color:rgb(90, 59, 12);
+    margin-top: 5px;
+
+}
+
+/*servicios*/
+
+.card{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: var(--carousel-button-svg-stroke-width);
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    background-color:  rgb(253, 251, 248);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    transition: all 300ms ease;
+    border: 2px solid rgba(83, 59, 51, 0.3);
+}
+
+.card:hover{
+    box-shadow: 2px 10px 10px 0 rgba(0, 0, 0, 0.4);
+    transform: translateY(-2%);
+}
+
+.card p{
+    margin-top: 30px;
+    padding: 15px;
+    height: 50px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+article p{
+    width: 100%;
+    font-family: 'Merriweather', serif;
+    font-size: 12px;
+    width: 285px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+article img{
+    border-radius: 8px;
+}
+
+
+article h2{
+    color: rgb(83, 59, 51);
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.coluno{
+    display: flex;
+    justify-content: center;
+}
+
+.coluno div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textcaf{
+    margin-left: 10px;
+    width: 285px;
+    font-family: 'Merriweather', serif;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/*fin servicios*/
+
+/*productos*/
+
+.productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#productos div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 700px;
+}
+
+#productos a{
+    transition: all 200ms ease;
+    margin: 5px;
+    filter: grayscale(80%);
+}
+#productos a:hover{
+    transform: scale(105%);
+    cursor: pointer;
+    filter: none;
+}
+
+#productos img{
+    border: 1px solid;
+    border-color:  rgba(83, 59, 51, 0.2);
+    border-radius: 10px;
+}
+
+/*fin productos*/
+
+/*promociones*/
+
+.promocard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+    color: black;
+    background-color:  rgb(255, 255, 255);
+    margin: 15px;
+    transition: all 300ms ease;
+    border: 2px solid rgba(78, 78, 78, 0.3);
+    filter: grayscale();
+}
+
+.promocard:hover{
+    border: 2px solid rgba(255, 0, 0, 0.721);
+    background-color: rgb(255, 255, 255);
+    filter: none;
+}
+
+.promocard .columna .precio{
+    font-size: 50px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.promocard .boton{
+    margin-top: 20px;
+}
+.promocard .boton:hover{
+    background-color: rgb(189, 31, 31);
+}
+
+.promocard .columna img{
+    border-radius: 0;
+}
+/*fin de promociones*/
+
+/*formulario consultas*/
+
+input{
+    border: 1px solid;
+    border-color:  rgba(83, 59, 51, 0.3);
+}
+
+#contacto h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: rgb(83, 59, 51);
+    text-align: center;
+}
+
+.contenedor .contacto{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor .contacto .consulta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contenedor .contacto .botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contenedor .contacto .botones .boton{
+    margin: 15px;
+}
+
+.campo,.campocons{
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 500px;
+}
+
+
+.campocons{
+    margin-top: 20px;
+    height: 300px;
+}
+
+
+/*fin formulario consultas*/
+
+/*fin secciones*/
+
+/*pie*/
+
+footer{
+    width: 100%;
+    bottom: 0;  
+    background-color: rgb(255, 255, 255);
+}
+
+.footer{
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.footer div{
+    width: 950px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.creditos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: rgb(233, 223, 214);
+    font-size: 10px;
+}
+
+.creditos a{
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: rgb(233, 223, 214);
+    font-size: 12px;
+}
+
+footer img{
+    margin: 5px;
+}
+
+/*fin*/
